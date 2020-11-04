@@ -64,7 +64,7 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "75f98600-8c9a-4949-8696-4ebc53de3f1a",
-        "dataVariationFilePath": ".variations\\Quote variation_Sheet1.json",
+        "dataVariationFilePath": ".variations\\Quote variation_Sheet1_1.json",
         "fileName": "TestCases\\Quotes\\Calculator\\New quote rate calculator verification.xaml"
       },
       {
@@ -146,38 +146,7 @@
     {
       "filePath": "TestCases\\Quotes\\Calculator\\New quote rate calculator verification.xaml",
       "uniqueId": "75f98600-8c9a-4949-8696-4ebc53de3f1a",
-      "input": [
-        {
-          "name": "Amount",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Term",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Income",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Age",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Expected",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        }
-      ],
+      "input": [],
       "output": []
     },
     {
@@ -225,38 +194,7 @@
     {
       "filePath": "TestCases\\Quotes\\Calculator\\New quote rate calculator verification.xaml",
       "uniqueId": "29ba6e6b-9fd4-4cf3-9f54-c32c7f2266fc",
-      "input": [
-        {
-          "name": "Amount",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Term",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Income",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Age",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        },
-        {
-          "name": "Expected",
-          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-          "required": false,
-          "hasDefault": true
-        }
-      ],
+      "input": [],
       "output": []
     }
   ],
