@@ -18,8 +18,7 @@ steps:
 
 - task: UiPathTest@2
   inputs:
-    testTarget: 'TestProject'
+    testTarget: 'TestSet'
     orchestratorConnection: 'COE Orchestrator IT tenant'
-    testProjectPath: '$(Build.SourcesDirectory)/Test Project/net45/'
-    environment: 'TestingAutomation'
+    testSet: 'UiBank calculator regression set'
     folderName: 'TestingCI'
