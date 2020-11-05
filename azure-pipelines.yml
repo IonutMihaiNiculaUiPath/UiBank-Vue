@@ -14,12 +14,20 @@ variables:
   value: token
 
 steps:
+- task: UiPathPack@2
+  displayName: Pack test project
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)/UiBankTestingItAutomation'
+    outputType: 'Tests'
+    orchestratorConnection: 'COE Orchestrator IT tenant'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 - task: UiPathTest@2
   displayName: Run tests in project
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'COE Orchestrator IT tenant'
-    testProjectPath: 'IonutMihaiNiculaUiPath/UiBank-Vue/UiBankTestingITAutomation'
+    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
     environment: 'TestingAutomation'
     folderName: 'TestingCI'
