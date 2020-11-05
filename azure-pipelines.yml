@@ -28,7 +28,7 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'COE Orchestrator IT tenant'
-    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    testProjectPath: '$(Build.SourcesDirectory)/UiBankTestingItAutomation'
     environment: 'TestingAutomation'
     folderName: 'TestingCI'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
