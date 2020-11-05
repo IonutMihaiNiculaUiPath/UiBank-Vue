@@ -57,6 +57,7 @@ steps:
       $body = "{ `"startInfo`": { `"ReleaseKey`": `"469826c3-75ea-4655-9720-0b4cb9c36eac`", `"RobotIds`": [], `"JobsCount`": `"1`", `"JobPriority`": `"Normal`", `"Strategy`": `"JobsCount`", `"InputArguments`": `"{}`" } }"
       $response = Invoke-RestMethod 'https://cloud.uipath.com/uipathrpacoe/IT/odata/Jobs/UiPath.Server.Configuration.OData.StartJobs' -Method 'POST' -Headers $headers -Body $body
       #$response | ConvertTo-Json
+      Start-Sleep -Seconds 780
 
 - task: Delay@1
   inputs:
