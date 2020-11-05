@@ -1,0 +1,87 @@
+{
+  "name": "UiBankTestingITAutomation",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[20.10.1-beta.1162306]",
+    "UiPath.Testing.Activities": "[1.2.1-preview]",
+    "UiPath.UIAutomation.Activities": "[20.10.2-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a38087a5-37f4-4cd7-852f-006099e008da",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5f39fddf-9029-425c-95f2-3fd03dcc2926",
+        "fileName": "TestCases\\Login\\Login successfully.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8da2f0f8-5b0e-458f-9fc3-9f04d814ff7a",
+        "fileName": "TestCases\\Login\\No login with email missing.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ed5513f6-b0b8-4f25-b7f0-64d09958a228",
+        "fileName": "TestCases\\Login\\No login with invalid credentials.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ddfcb34f-930e-4c44-88d1-c4a1c128fd3c",
+        "fileName": "TestCases\\Login\\No login with password missing.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bb699af0-a996-41ef-b029-5d11871a8821",
+        "fileName": "TestCases\\Quotes\\New quote shows up in quotes list.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "88d8ff4d-f5a8-4e60-9cb8-01a0a3e83841",
+        "fileName": "TestCases\\Quotes\\New quote with valid values is successfully.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7fa0988f-6af9-414d-9c6e-670b4ae2ba89",
+        "dataVariationFilePath": ".variations\\Quote variation_Sheet1.json",
+        "fileName": "TestCases\\Quotes\\Calculator\\New quote rate calculator verification.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}
