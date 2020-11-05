@@ -59,10 +59,6 @@ steps:
       #$response | ConvertTo-Json
       Start-Sleep -Seconds 780
 
-- task: Delay@1
-  inputs:
-    delayForMinutes: '13'
-
 - task: UiPathPack@2
   displayName: Pack test project
   inputs:
