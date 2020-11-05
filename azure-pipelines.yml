@@ -14,6 +14,51 @@ variables:
   value: token
 
 steps:
+- task: PowerShell@2
+  displayName: Auth
+  inputs:
+    targetType: 'inline'
+    script: |
+      $url = "https://account.uipath.com/oauth/token"
+      
+      $body = @{
+      	grant_type = "refresh_token"
+      	client_id = "8DEv1AMNXczW3y4U15LL3jYf62jK93n5"
+      	refresh_token = "rGjPGkxFau8OdF-HyXkRp9prB-hK6q1YaTx0sUdxscO1a"
+      }
+      
+      $headers = @{
+      	'X-UIPATH-TenantName' = 'IT'
+        'ContentType' = 'application/json'
+      }
+
+      $Parameters = @{
+          Method = "POST"
+          Uri =  $url
+          Body = ($Body | ConvertTo-Json) 
+          ContentType = "application/json"
+          Headers = $headers
+      }  
+      
+      $Response = Invoke-RestMethod @Parameters
+      $authToken = $Response.access_token
+      Write-Host "##vso[task.setvariable variable=token;]$authToken"
+
+- task: PowerShell@2
+  displayName: StartJob
+  inputs:
+    targetType: 'inline'
+    script: |
+      $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+      $headers.Add("Content-Type", "application/json")
+      $headers.Add("X-UIPATH-TenantName", "IT")
+      $headers.Add("X-UIPATH-OrganizationUnitId", "14255")
+      $headers.Add("Authorization", "Bearer $(token)")
+      $body = "{ `"startInfo`": { `"ReleaseKey`": `"469826c3-75ea-4655-9720-0b4cb9c36eac`", `"RobotIds`": [], `"JobsCount`": `"1`", `"JobPriority`": `"Normal`", `"Strategy`": `"JobsCount`", `"InputArguments`": `"{}`" } }"
+      $response = Invoke-RestMethod 'https://cloud.uipath.com/uipathrpacoe/IT/odata/Jobs/UiPath.Server.Configuration.OData.StartJobs' -Method 'POST' -Headers $headers -Body $body
+      #$response | ConvertTo-Json
+      Start-Sleep -Seconds 780
+
 - task: UiPathPack@2
   displayName: Pack test project
   inputs:
