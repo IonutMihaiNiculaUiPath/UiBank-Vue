@@ -31,3 +31,4 @@ steps:
     testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
     environment: 'TestingAutomation'
     folderName: 'TestingCI'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
