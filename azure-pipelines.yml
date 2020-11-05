@@ -20,6 +20,6 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'COE Orchestrator IT tenant'
-    testProjectPath: '$(Build.SourcesDirectory)/Test Project/net45/'
+    testProjectPath: '$(Build.SourcesDirectory)UiBankTestingITAutomation/'
     environment: 'TestingAutomation'
     folderName: 'TestingCI'
