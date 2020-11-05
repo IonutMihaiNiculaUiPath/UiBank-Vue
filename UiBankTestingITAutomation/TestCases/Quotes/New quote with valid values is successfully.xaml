@@ -157,7 +157,7 @@
                   <ActivityAction>
                     <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
                       <ui:GetValue.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d93ff85-226e-44fc-88c3-c0f706e1d514" InformativeScreenshot="81bdcbbb5006a0ac3c5bd60ab7caf66b" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='1' isleaf='1' parentid='app' tag='DIV' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d93ff85-226e-44fc-88c3-c0f706e1d514" InformativeScreenshot="29d02479d56b7005a8a90372b1172b1c" Selector="&lt;html app='chrome.exe' title='frontend' /&gt;&lt;webctrl isleaf='1' parentid='app' tag='DIV' aaname='Congratulations you have been acepted!' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
