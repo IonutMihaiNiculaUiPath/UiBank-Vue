@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,2358</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>959,2472</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>New_quote_with_valid_values_is_successfully_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
@@ -77,7 +77,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="New_quote_with_valid_values_is_successfully" sap:VirtualizedContainerService.HintSize="1059,2193" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="New_quote_with_valid_values_is_successfully" sap:VirtualizedContainerService.HintSize="781,2267" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:Exception" Default="[Nothing]" Name="exception" />
       <Variable x:TypeArguments="ui:Browser" Name="browser" />
@@ -87,7 +87,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Given" sap:VirtualizedContainerService.HintSize="1017,431" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Given" sap:VirtualizedContainerService.HintSize="739,428" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="url" />
       </Sequence.Variables>
@@ -96,18 +96,18 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetUrl workflow" sap:VirtualizedContainerService.HintSize="467,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank\GetUrl.xaml">
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke GetUrl workflow" sap:VirtualizedContainerService.HintSize="467,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank\GetUrl.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="x:String" x:Key="url">[url]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,186" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[url + &quot;/NewQuote/&quot;]">
+      <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,184" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[browser]" Url="[url + &quot;/NewQuote/&quot;]">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -118,45 +118,37 @@
         </ui:OpenBrowser.Body>
       </ui:OpenBrowser>
     </Sequence>
-    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="1017,675" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="739,669" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[browser]" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  frontend'" sap:VirtualizedContainerService.HintSize="514,583" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="de440538400e5c71ba7493d8a9fa8f3d">
+      <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[browser]" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  frontend'" sap:VirtualizedContainerService.HintSize="514,577" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="de440538400e5c71ba7493d8a9fa8f3d">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,437" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,431" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,345" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,339" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke New quote workflow" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UiBank\New quote.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke New quote workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="UiBank\New quote.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_amount">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Amount" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_term">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Term" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_income">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Income" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_age">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Age" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_amount">[Amount]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_term">[Term]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_income">[Income]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_age">[Age]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -184,25 +176,25 @@
         </ui:BrowserScope.Body>
       </ui:BrowserScope>
     </Sequence>
-    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1017,915" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="739,998" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[browser]" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  frontend'" sap:VirtualizedContainerService.HintSize="975,823" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="1221753a305feecb33f0df8b1fc6e242">
+      <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[browser]" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  frontend'" sap:VirtualizedContainerService.HintSize="697,906" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="1221753a305feecb33f0df8b1fc6e242">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="941,677" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="663,760" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="899,62" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpressionWithOperator KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="621,61" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                 <uta:VerifyExpressionWithOperator.FirstExpression>
                   <InArgument x:TypeArguments="s:Exception">[exception]</InArgument>
                 </uta:VerifyExpressionWithOperator.FirstExpression>
@@ -210,60 +202,79 @@
                   <InArgument x:TypeArguments="x:Object">[Nothing]</InArgument>
                 </uta:VerifyExpressionWithOperator.SecondExpression>
               </uta:VerifyExpressionWithOperator>
-              <If Condition="[exception is Nothing]" sap:VirtualizedContainerService.HintSize="899,421" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[exception is Nothing]" sap:VirtualizedContainerService.HintSize="621,505" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="754,272" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence sap:VirtualizedContainerService.HintSize="476,358" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Contains" OutputArgument="Value" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
-                      <uta:VerifyControlAttribute.ActivityToTest>
-                        <ActivityAction>
-                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
-                            <ui:GetValue.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d93ff85-226e-44fc-88c3-c0f706e1d514" InformativeScreenshot="28c4ab3a1a7c09dfaa9862a348aa3937" Selector="&lt;html app='chrome.exe' title='*' /&gt;&#xD;&#xA;&lt;webctrl aaname='The Rate is*' tag='LABEL' class='v-label theme--light' /&gt;&#xD;&#xA;">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:GetValue.Target>
-                            <ui:GetValue.Value>
-                              <OutArgument x:TypeArguments="x:Object">
-                                <VariableReference x:TypeArguments="x:Object">
-                                  <VariableReference.Variable>
-                                    <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID0" Name="Value" />
-                                  </VariableReference.Variable>
-                                </VariableReference>
-                              </OutArgument>
-                            </ui:GetValue.Value>
-                          </ui:GetValue>
-                        </ActivityAction>
-                      </uta:VerifyControlAttribute.ActivityToTest>
-                      <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
-                        <ActivityFunc x:TypeArguments="x:Object">
-                          <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
-                            <uta:ArgumentsBridge.Input>
-                              <InArgument x:TypeArguments="x:Object">
-                                <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
-                              </InArgument>
-                            </uta:ArgumentsBridge.Input>
-                          </uta:ArgumentsBridge>
-                        </ActivityFunc>
-                      </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
-                      <uta:VerifyControlAttribute.Expression>
-                        <InArgument x:TypeArguments="x:String">[Expected]</InArgument>
-                      </uta:VerifyControlAttribute.Expression>
-                    </uta:VerifyControlAttribute>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,266" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <TryCatch.Try>
+                        <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Contains" OutputArgument="Value" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                          <uta:VerifyControlAttribute.ActivityToTest>
+                            <ActivityAction>
+                              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                <ui:GetValue.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d93ff85-226e-44fc-88c3-c0f706e1d514" InformativeScreenshot="28c4ab3a1a7c09dfaa9862a348aa3937" Selector="&lt;html app='chrome.exe' title='*' /&gt;&#xA;&lt;webctrl aaname='The Rate is*' tag='LABEL' class='v-label theme--light' /&gt;&#xA;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:GetValue.Target>
+                                <ui:GetValue.Value>
+                                  <OutArgument x:TypeArguments="x:Object">
+                                    <VariableReference x:TypeArguments="x:Object">
+                                      <VariableReference.Variable>
+                                        <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID0" Name="Value" />
+                                      </VariableReference.Variable>
+                                    </VariableReference>
+                                  </OutArgument>
+                                </ui:GetValue.Value>
+                              </ui:GetValue>
+                            </ActivityAction>
+                          </uta:VerifyControlAttribute.ActivityToTest>
+                          <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                            <ActivityFunc x:TypeArguments="x:Object">
+                              <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                                <uta:ArgumentsBridge.Input>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                                  </InArgument>
+                                </uta:ArgumentsBridge.Input>
+                              </uta:ArgumentsBridge>
+                            </ActivityFunc>
+                          </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                          <uta:VerifyControlAttribute.Expression>
+                            <InArgument x:TypeArguments="x:String">[Expected]</InArgument>
+                          </uta:VerifyControlAttribute.Expression>
+                        </uta:VerifyControlAttribute>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,104" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
                   </Sequence>
                 </If.Then>
               </If>
-              <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="899,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+              <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="621,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
             </Sequence>
           </ActivityAction>
         </ui:BrowserScope.Body>
